@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* CSS Document */
+button:focus{
+	outline: none;
+}
+:root {
+    --mdc-theme-primary: #0674ED !important;
+    --mdc-theme-secondary: #018786;
+    --mdc-theme-background: #0674ED !important;
+    --mdc-theme-surface: #fff;
+    --mdc-theme-error: #b00020;
+    --mdc-theme-on-primary: #fff;
+    --mdc-theme-on-secondary: #fff;
+    --mdc-theme-on-surface: #000;
+	--mdc-theme-on-error: #fff;
+}
+.mdc-list-item__graphic, .mdc-list-item--activated{
+	color: var(--mdc-theme-primary) !important;
+}
+
+/* All Services*/
+.allServicesDropdown .uk-dropdown {
+    max-height: calc(-56px + 100vh);
+    transition: height 0.3s ease-in-out 0s;
+	background: #fff;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,.30), 0 2px 6px 2px rgba(60,64,67,.15);
+    overflow-x: hidden;
+}
+.allServicesDropdown .uk-dropdown ul li {
+    display: inline-block;
+    height: 98px;
+    list-style-type: none;
+    padding: 1px 7px 1px 7px;
+    position: relative;
+    transition: transform .2s cubic-bezier(.333,0,0,1);
+    vertical-align: top;
+    width: 86px;
+}
+.allServicesDropdown .uk-dropdown ul li a {
+    border-radius: 8px;
+    margin: 8px 2px;
+    position: absolute;
+    text-align: center;
+    width: 84px;
+}
+.allServicesDropdown.uk-dropdown ul li a:hover {
+    background-color:rgba(6,116,237,.1);
+}
+.allServicesDropdown .services-icon {
+    display: block;
+    height: 54px;
+    vertical-align: top;
+    width: 54px;
+    background-image: url(/assets/img/services.png);
+    background-size: 54px 2266px;
+	margin: 0 auto;
+}
+.allServicesDropdown a {
+    color: #404040;
+    font-size: 12px;
+}
+.allServicesDropdown [class*=uk-column-] {
+    column-gap: 10px;
+}
+.allServicesDropdown .uk-nav-header {
+    text-transform:capitalize !important;
+	color: #E89400;
+	font-weight: 500;
+}
+.allServicesDropdown .uk-nav-header:not(:first-child) {
+    margin-top: 0;
+}
+.allServicesDropdown .uk-dropdown-nav>li>a {
+    color: #404040;
+	font-size: .8rem;
+	border-radius: .5rem;
+	text-align: center;
+}
